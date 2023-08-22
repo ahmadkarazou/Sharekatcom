@@ -1,0 +1,263 @@
+Sharekatcom application
+team:
+Sami Abdul Kareem Alsanabrah	202010437
+Ahmed Jamal Karzoun	201910082
+Anas Ibrahim aljawabrah	202130057
+
+Team leader: Ahmed Jamal Karzoun
+Tools and Technologies Used:
+1.Flutter
+2. Firebase
+3. Android Studio
+4. GitHub
+
+
+
+
+
+
+
+
+Cover Page
+
+Software testing Document (STD)
+Sharekatcom application
+Version: 4.0.0
+21/8/2023
+link GitHub: https://github.com/ahmadkarazou/Sharekatcom
+Amane Arabah University
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Revisions Page 
+Version	Primary Author 	Description of Version	Date Completed
+4.0.0	Sami
+alsanabrah	Ahmad Karzoun	21/8/2023
+
+
+
+
+
+
+1 Testing Plans	
+2 Types and Steps of Testing 	
+
+
+
+
+
+1.Testing Plans 
+Most cases were tested manually using the below formula: 
+(Test case, Test steps, Expected Result) VS (Actual Result). [5]
+	“Test case" represents the required data to use in the test to get actual results of providing data.
+	“Test steps" represent the actions the tester needs to perform.
+	“Expected Result” represents the expected result of performing a specific task on the application. Meaning logically, how the application should respond to a specific scenario.
+	“Status” represents whether the test failed or was successful.
+
+
+
+
+
+2.Types and Steps of Testing
+Testing is the process of verifying the quality and validity of software by implementing it and comparing the expected results with the actual results. Tests are used to verify that software works correctly, meets specified requirements, and interacts properly with users and the surrounding environment.
+The next tables contain lists of some test cases for specific functionalities and their results.
+Test case ID	Test scenario 	Test case	Test steps	Expected result	Actual result	Status (pass/fail)
+1	Verify
+register	Enter valid email &
+Valid password
+& valid Mobile number
+& Valid full name
+	1. Enter email
+2. Enter Password
+3.Enter Mobile number
+4. Enter Full name
+5.Input Image  
+6. Click the login button	Email: Enter (….@gmail.com) Ex
+Password: up to eight digest and equal 
+Mobile number:
+(0799999999) Ex
+Full name:
+(احمد جمال الكرزون )
+	(ahmad@gmail.com)
+(12345678)
+(0799250743)
+(احمد جمال الكرزون )
+	Pass
+2	Verify
+register	Enter invalid email &
+invalid password
+& invalid Mobile number
+& invalid full name
+	1. Enter email
+2. Enter Password
+3.Enter Mobile number
+4. Enter Full name
+5.Input Image  
+6. Click the login button	Email: Enter (….gmail.com) Ex
+(….@gmail.om) Ex
+Password: less than eight digest and equal 
+Mobile number:
+(079999) Ex
+Full name: (on Enter)
+
+.	1-لم يتم الادخال بشكل صحيح 
+	fail
+3	Verify
+register	null 	1. Click the login button	Email: null
+Password: null
+Mobile number: null
+Full name: null
+	1-لم يتم الادخال بشكل صحيح 
+	fail
+User Register Page:¬¬
+                               Table 2: User Register Page
+User login Page:
+Test case ID	Test scenario 	Test case	Test steps	Expected result	Actual result	Status (pass/fail)
+1	Verify
+login	Enter valid email &
+Valid password
+	1. Enter email
+2. Enter Password
+3. Click the login button	Email: Enter (….@gmail.com) Ex
+Password: up to eight digest and equal 
+	(ahmad@gmail.com)
+(12345678)
+	Pass
+2	Verify
+login	Enter invalid email &
+invalid password
+	1. Enter email
+2. Enter Password
+3. Click the login button	Email: Enter (….gmail.com) Ex
+(….@gmail.om) Ex
+Password: less than eight digest and equal 	1-لم يتم الادخال بشكل صحيح 
+	fail
+3	Verify
+login	null 	1. Click the login button	Email: null
+Password: null
+	1-لم يتم الادخال بشكل صحيح 
+	fail
+                               Table 3: User login Page
+
+Add Company Page:
+                               Table 4: Add Company Page
+Test case ID	Test scenario 	Test case	Test steps	Expected result	Actual result	Status (pass/fail)
+1	Verify
+Add Company	Choose  image
+&
+Valid name of  company 
+& 
+Valid Employment
+&
+Valid Product or service details
+&
+Valid Commercial Registration No
+&
+Valid   Website link
+&
+Valid facebook link
+	1. Valid Choose  image
+2. Enter  name of  company
+3.  Enter Employment
+4. Enter Product or service details
+5. Commercial Registration Number
+6. Click on Website link
+7. Click on facebook link
+8.Click the Add button	1.Show  image
+2.  السوق المفتوح
+3. E-commerce
+4. Selling cars
+5.54653342365
+6.https://jo.opensooq.com/ar
+7. https://ar-ar.facebook.com/	1.Show  image
+2.  السوق المفتوح
+3. E-commerce
+4. Selling cars
+5.54653342365
+6.https://jo.opensooq.com/ar
+7. https://ar-ar.facebook.com/	Pass
+2	Verify
+Add Company	Invalid  Choose  image
+&
+Invalid name of  company 
+& 
+Invalid Employment
+&
+Invalid Product or service details
+&
+Invalid Commercial Registration No
+&
+Invalid  Website link
+&
+Invalid facebook link
+	1.   Invalid Choose  image
+2. Enter  name of  company
+3.  Enter Employment
+4. Enter Product or service details
+5. Commercial Registration Number
+6. Click on Website link
+7. Click on facebook link
+8.Click the Add button	1-  image  not selected
+1.	The company name is not written
+2.	The scope of work is not clear
+3.	Product details are not mentioned
+4.	The commercial registration number is incorrect 
+6.Htt
+7.https://ar-ar.facebookcom/
+https://ar-ar.facebok.com/
+7.
+
+	1-لم يتم الادخال بشكل صحيح 
+	fail
+3	Verify
+Add Company	Invalid  Choose  image
+&
+Invalid name of  company 
+& 
+Invalid Employment
+&
+Invalid Product or service details
+&
+Invalid Commercial Registration No
+&
+Invalid  Website link
+&
+Invalid facebook link
+	1.   Invalid Choose  image
+2. Enter  name of  company
+3.  Enter Employment
+4. Enter Product or service details
+5. Commercial Registration Number
+6. Click on Website link
+7. Click on facebook link
+8.Click the Add button	1.   Choose  image:null
+2.  name of  company :null
+3. Employment :null
+4. Product or service details :null
+5. Commercial Registration Number :null
+6. Website link :null
+7. facebook link :null
+8.Click the Add button	1-لم يتم الادخال 	fail
